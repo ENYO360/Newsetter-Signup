@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    background-color: hsl(235, 18%, 26%);
+}
+
+.container {
+    margin: 20% auto;
+    max-width: 800px;
+    padding: 20px;
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+}
+
+@media all and (max-width: 800px) {
+    .container {
+        margin: 20% 5%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .container {
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        display: grid;
+        grid-template-areas: 
+        "mobile-bg"
+        "description";
+    }
+}
+
+.bg-space {
+    width: 400px;
+    background-image: url(/assets/images/illustration-sign-up-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+@media all and (max-width: 600px) {
+    .bg-space {
+        width: inherit;
+        height: 250px;
+        background-image: url(/assets/images/illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        grid-area: mobile-bg;
+    }
+}
+
+.description {
+    padding: 15px;
+    margin-bottom: 40px;
+    grid-area: description;
+
+}
+
+@media all and (max-width: 600px) {
+    .description {
+        
+    }
+}
+
+.description > h1 {
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    padding: 15px;
+    font-size: 40px;
+}
+
+.description > p {
+    color: hsl(235, 18%, 26%);
+    font-weight: 500;
+    padding: 15px;
+}
+
+.description > ul {
+    padding: 0 0 15px 35px;
+    color: hsl(235, 18%, 26%);
+    font-weight: 500;
+}
+
+ul > li {
+    padding: 0 0 10px 5px;
+    list-style-image: url(/assets/images/icon-list.svg);
+}
+
+.form-container, form {
+    padding: 5px 0px 5px 15px;
+    display: grid;
+    gap: 10px;
+}
+
+.form-container > form > label {
+    font-weight: 700;
+}
+
+.form-container > form > input, button {
+    padding: 18px;
+    margin: 0 35px 10px 0;
+    border-radius: 10px;
+}
+
+input {
+    border: 1px solid hsl(231, 7%, 60%);
+    color: hsl(249, 7%, 60%);
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+button {
+    color: white;
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    font-weight: 700;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, hsl(328, 72%, 66%),hsl(4, 100%, 67%));
+    cursor: pointer;
+}
+
+/* Success Message Styling */
+
+.success-container {
+    margin: 20% auto;
+    max-width: 400px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+@media all and (max-width: 600px) {
+    .success-container {
+    }
+}
+
+.success-message > img {
+    margin: 5px 0 20px 0;
+}
+
+.success-message > h1 {
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    margin-bottom: 15px;
+}
+
+.success-message > p {
+    font-weight: 400;
+    text-align: left;
+    color: hsl(235, 18%, 26%);
+    font-size: 16px;
+}
+
+.success-message > button {
+    margin-top: 25px;
+    width: 320px;
+}
+
+@media all and (max-width: 600px) {
+    .success-message > button {
+        margin-top: 100%;
+    }
+}
+
+.success-message > button:hover {
+    background-image: linear-gradient(to right, hsl(328, 72%, 66%),hsl(4, 100%, 67%));
+    cursor: pointer;
+}
+
+.attribution {
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.attribution > a {
+    color: hsl(4, 100%, 67%);
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.span1 {
+    color: red;
+    padding-right: 2.5rem;
+}
+
