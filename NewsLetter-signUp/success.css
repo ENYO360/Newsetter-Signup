@@ -1,0 +1,13 @@
+@media all and (max-width: 600px) {
+    body {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        background-color: white;
+    }
+
+}
+
+.span2 {
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+}
